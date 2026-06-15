@@ -12,24 +12,49 @@
 <body>
 
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">E-Pet Shop</a>
+   <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-                </ul>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="ChatGPT Image Jun 15, 2026, 08_16_52 PM.png" alt="Logo" class="logo">
+            <div class="brand-text">
+                <span class="brand-name">E-Pet Shop</span>
+                <small>Your Pet Partner</small>
             </div>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pets">Pets</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn-register" href="#">
+                        Register
+                    </a>
+                </li>
+
+            </ul>
         </div>
-    </nav>
+
+    </div>
+</nav>
 
   
     <section class="hero text-center">
@@ -63,7 +88,7 @@
         </div>
     </div>
 </section>
-<section class="featured-pets py-5">
+<section class="why-choose-us">
     <div class="container">
         <h2 class="text-center mb-5">Featured Pets</h2>
 
@@ -71,8 +96,31 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card pet-card">
-                    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500"
-                         class="card-img-top" alt="Dog">
+                    <div id="dogCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="2000">
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500"
+                 class="d-block w-100" alt="Dog">
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=500"
+                 class="d-block w-100" alt="Dog">
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500"
+                 class="d-block w-100" alt="Dog">
+        </div>
+
+    </div>
+
+</div>
                     <div class="card-body text-center">
                         <h5 class="card-title">Dog</h5>
                         <p class="card-text">Friendly and loyal companion.</p>
